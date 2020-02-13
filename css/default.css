@@ -1,0 +1,226 @@
+/*
+code clean up
+px to em
+make sure about margins and paddings
+ispect and check if its correctly applied
+making this weekend entire box clickable to new page
+*/
+
+/*importing google fonts*/
+@import url('https://fonts.googleapis.com/css?family=Bad+Script&display=swap');
+
+/*Color codes to be use*/
+:root{
+    --col-white:#fff;
+    --col-silk:#BBAA9B;
+    --col-Porcelain:#dedad8;
+    --col-lemon-grass:#9A9E8D;
+
+    --col-red:#ff0000;
+    --col-han-purple:#2713ea;
+    }
+/*----------------------------------------------*/
+/* BODY */
+/*----------------------------------------------*/
+body{
+    color: #000;
+    font-family: 'Krub', sans-serif;
+}
+/*----------------------------------------------*/
+/* RESET */
+/*----------------------------------------------*/
+
+h1,h2,h3{margin: 0;font-weight: normal;}
+a{text-decoration: none;}
+.margin-0{margin:0}
+.font-size-small{ font-size: .7em;}
+.font-size-mid{ font-size: 1em;}
+.border-bottom{border-bottom: .1em solid rgb(238, 235, 235);}
+.border-top{border-top: .1em solid rgb(238, 235, 235);}
+img{ display: block;}
+.text-transform{ text-transform: uppercase;}
+label{display: block;}
+input{display: block;}
+/*----------------------------------------------*/
+/* COMMON CLASSES */
+/*----------------------------------------------*/
+.text-center{text-align: center;}
+.row{display: flex;}
+.col-2{flex-basis: calc(99%/2);padding: .6em;}
+.col-3{flex-basis: calc(99%/3);padding: .1em;}
+.col-4{flex-basis: calc(100%/4);}
+/*----------------------------------------------*/
+/* HEADER */
+/*----------------------------------------------*/
+.header{
+    height: 30em;
+    max-width: 100%;
+    background-image: url(/images/table_chair_lamp.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    justify-content: space-between;
+}
+.website_logo{
+    height:30em;
+    width: 3em;
+    background: linear-gradient(90deg, rgba(255,255,255,0.7598389697675946) 100%, rgba(255,255,255,0.7430322470785189) 100%);
+}
+.website_logo img{
+    height: 3em;
+    padding: .5em;
+}
+.airbnb_slogan{ 
+    font-size: 1.1em; 
+    writing-mode: vertical-rl;
+    transform: rotate(180deg);
+    letter-spacing: .1em;
+    color:var(--col-lemon-grass);
+    padding: .5em;
+}
+.menu{
+    width: 3em;
+    margin-right: .7em;
+}
+.menu_image img{
+    height: 3em;
+}
+/*---
+-------------------------------------------*/
+/* MAIN/
+/*----------------------------------------------*/
+.main{
+  max-height: auto;
+}
+.main h2{ 
+    color: var(--col-silk);
+    /*font-size: 2em; if give font size here,, it changes the font size of booking h2 as well*/
+}
+/*-------*/
+/* form/
+/*-------*/
+.booking{
+    background-color: var(--col-Porcelain);
+    border: .1em solid var(--col-lemon-grass);
+    border-radius: 1em;
+    margin: 2em auto 2em auto;
+    padding: 2em 1em 1em 1em;
+    box-sizing: border-box;
+}
+.booking h2{
+ color:var(--col-lemon-grass);
+ 
+}
+.booking_form{
+    max-width: 100%;
+    padding: 2em;
+}
+.form_controls input{
+    box-sizing: border-box;
+    width: 100%;
+    padding: .8em;
+    margin: .2em auto 1em auto;
+    border:0em;
+    border-radius: .3em;
+}
+.button-box{
+    text-align: center;
+}
+button{
+     text-align: center;
+     border:0em;
+     border-radius:  .3em;
+     padding: .8em;
+     background-color:var(--col-white)
+ }
+/*-------*/
+/*----------------------------------------------*/
+/* PAGE - WRAPPER/
+/*----------------------------------------------*/
+.page-wrapper{
+  padding: .2em;
+  margin: 0 auto;
+}
+
+/*-------*/
+/* explore/
+/*-------*/
+.stay, .experience, .adventure{margin-bottom: 2em;}
+
+.explore_subtitles{ 
+    position: absolute;
+    content: "";
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+   
+    font-size: 1em;
+    text-transform: uppercase;
+    color:var(--col-white);
+}
+.stays_image{
+    position: relative;
+    height: 10em;
+    border-top-left-radius: 50px;
+
+    background-image: url(/images/stays.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.experience_image{
+    position: relative;
+    height: 10em;
+    border-radius: 10px;
+
+    background-image: url(/images/exp.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.adventure_image{
+    position: relative;
+    height: 10em;
+    border-top-right-radius: 50px;
+
+    background-image: url(/images/adventure.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+/*-------*/
+/* superhost/
+/*-------*/
+.with_superhost{ height: 20em;}
+.superhost_video { right: 0; bottom: 0; max-width: 100%; max-height: 100%;}
+
+/*-------*/
+/* this weekend/
+/*-------*/
+.weekend_img{
+    height: 20em;
+    width: 100%;
+    border-radius: .4em;
+    margin-bottom: .5em;
+}
+.rating_star{
+    max-width: .7em;
+}
+/*-------*/
+/* places to look around in toronto/
+/*-------*/
+.image-container img{
+    width:100%;
+    height: 10em;
+}
+/*-------*/
+/*  footer/
+/*-------*/
+.footer{
+    margin-top: 2em;
+    max-width: 100%;
+    max-height: auto;
+}
+.footer_content{
+    padding: .5em;
+}
